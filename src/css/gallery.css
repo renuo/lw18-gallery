@@ -58,7 +58,8 @@ img {
 .image-8,
 .image-9,
 .image-10,
-.image-13 {
+.image-13,
+.image-17 {
   grid-row: span 2;
 }
 
