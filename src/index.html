@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="js/generate.js" type="text/javascript"></script>
   <script type="text/javascript">
-    const imagesCount = 13;
+    const imagesCount = 14; // Change this variable to the number of images you have in the img/ folder
+    const cycleCount = 6; // Change this to how many times you want to loop through the images and render them
 
-    window.addEventListener("load", () => {
-      generateContent('#gallery', imagesCount);
-      generateContent('#gallery', imagesCount);
+    window.addEventListener('load', () => {
+      new Array(cycleCount).fill(undefined).forEach(() => generateContent('#gallery', imagesCount))
     });
   </script>
 </head>
