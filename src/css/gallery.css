@@ -1,0 +1,46 @@
+.gallery-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: 200px;
+  grid-gap: 2px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-1,
+.image-5 {
+  grid-row: span 3;
+}
+
+.image-7 {
+  grid-column: span 2;
+}
+
+.image-8,
+.image-9,
+.image-10 {
+  grid-row: span 2;
+}
+
+.image-container {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition-duration: 0.2s;
+  transition-property: filter, width, height, transform;
+}
+
+.image-container:hover img {
+  filter: saturate(2);
+  width: 110%;
+  height: 110%;
+  transform: translateX(-5%) translateY(-5%);
+}
