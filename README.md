@@ -3,4 +3,4 @@
 
 Boilerplate is on master
 
-A [suggested solution](https://renuo.github.io/lw18-gallery) is on branch `sample`
+A [suggested solution](https://renuo.github.io/lw18-gallery) is on branch [`sample`](https://github.com/renuo/lw18-gallery/tree/sample)
