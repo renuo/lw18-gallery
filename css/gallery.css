@@ -3,8 +3,8 @@
 }
 
 .scroll-snapper {
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: calc(var(--title-header-height) + 10px);
+  scroll-snap-type: y mandatory; /* We want scroll snapping while scrolling up/down */
+  scroll-padding-top: calc(var(--title-header-height) + 10px) /* Apply a padding to the sroll snap container */;
   height: 100vh;
   overflow-y: scroll;
 }
@@ -31,12 +31,12 @@
 }
 
 .gallery-grid {
-  display: grid;
+  display: grid; /* It's a CSS Grid :) */
   width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: dense;
-  grid-auto-rows: 200px;
-  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr); /* We want 4 equally sized column */
+  grid-auto-flow: dense; /* Fill up empty spaces with small items first */
+  grid-auto-rows: 200px; /* Every row which gets auto generated should be 200px tall */
+  grid-gap: 2px; /* Make a space of 2px around each cell */
 }
 
 img {
@@ -47,7 +47,7 @@ img {
 
 .image-1,
 .image-5 {
-  grid-row: span 3;
+  grid-row: span 3; /* image 1 and 5 should span 3 rows, therefore they get an area of 1col x 3*200px  */
 }
 
 .image-7,
