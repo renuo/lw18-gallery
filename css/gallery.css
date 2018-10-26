@@ -4,7 +4,7 @@
 
 .scroll-snapper {
   scroll-snap-type: y mandatory; /* We want scroll snapping while scrolling up/down */
-  scroll-padding-top: calc(var(--title-header-height) + 10px) /* Apply a padding to the sroll snap container */;
+  scroll-padding-top: calc(var(--title-header-height) + 10px); /* Apply a padding to the sroll snap container */
   height: 100vh;
   overflow-y: scroll;
 }
